@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_470f3a5194cfdc81eb36f5c7225e6588 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_470f3a5194cfdc81eb36f5c7225e6588" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_470f3a5194cfdc81eb36f5c7225e6588 = L.map(
+                "map_470f3a5194cfdc81eb36f5c7225e6588",
+                {
+                    center: [12.9716, 77.5946],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c445a660534b8fde22108425fe8d8345 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_c445a660534b8fde22108425fe8d8345.addTo(map_470f3a5194cfdc81eb36f5c7225e6588);
+        
+    
+            var marker_62f2ea994579403b40350116e4097747 = L.marker(
+                [12.690401, 76.730023],
+                {}
+            ).addTo(map_470f3a5194cfdc81eb36f5c7225e6588);
+        
+    
+        var custom_icon_954c066ba1bf762b127e1fe71d47a37a = L.icon({"iconSize": [30, 30], "iconUrl": "https://static.vecteezy.com/system/resources/thumbnails/012/042/301/small_2x/warning-sign-icon-transparent-background-free-png.png"});
+        marker_62f2ea994579403b40350116e4097747.setIcon(custom_icon_954c066ba1bf762b127e1fe71d47a37a);
+        
+    
+        var popup_087f832c950c0d908e380ff34f028918 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a830f8a6fd7aae710efd73fc18db0ee1 = $(`<div id="html_a830f8a6fd7aae710efd73fc18db0ee1" style="width: 100.0%; height: 100.0%;">         <div style="text-align: center;">             <p style="font-size:15px;font-weight:bold">TAKE ACTION</p>             <img src="https://as1.ftcdn.net/v2/jpg/02/81/70/76/1000_F_281707612_nfMEUtDNZTHQ9LLYhTuT6IrxEuaNYCuB.jpg" style="width:100%;max-width:300px;">             <p>Pit Hole Not Closed</p>             <a href="/alert_explain/?lat=12.690401&lon=76.730023" target="_blank">View details</a>'         </div>         </div>`)[0];
+                popup_087f832c950c0d908e380ff34f028918.setContent(html_a830f8a6fd7aae710efd73fc18db0ee1);
+            
+        
+
+        marker_62f2ea994579403b40350116e4097747.bindPopup(popup_087f832c950c0d908e380ff34f028918)
+        ;
+
+        
+    
+    
+            var marker_357db4236d672139be481af347689a02 = L.marker(
+                [12.102835, 76.573091],
+                {}
+            ).addTo(map_470f3a5194cfdc81eb36f5c7225e6588);
+        
+    
+        var custom_icon_a104d9f5ef2804239ba0e288717a4246 = L.icon({"iconSize": [30, 30], "iconUrl": "https://static.vecteezy.com/system/resources/thumbnails/012/042/301/small_2x/warning-sign-icon-transparent-background-free-png.png"});
+        marker_357db4236d672139be481af347689a02.setIcon(custom_icon_a104d9f5ef2804239ba0e288717a4246);
+        
+    
+        var popup_a86faf3f32d386e19e4a8e274e565e2f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f9a27505222e0436909d6ee913eaf66f = $(`<div id="html_f9a27505222e0436909d6ee913eaf66f" style="width: 100.0%; height: 100.0%;">         <div style="text-align: center;">             <p style="font-size:15px;font-weight:bold">TAKE ACTION</p>             <img src="https://static.toiimg.com/thumb/msid-87859767,width-400,height-225,resizemode-72/87859767.jpg" style="width:100%;max-width:300px;">             <p>Construction Blocking Road</p>             <a href="/alert_explain/?lat=12.102835&lon=76.573091" target="_blank">View details</a>'         </div>         </div>`)[0];
+                popup_a86faf3f32d386e19e4a8e274e565e2f.setContent(html_f9a27505222e0436909d6ee913eaf66f);
+            
+        
+
+        marker_357db4236d672139be481af347689a02.bindPopup(popup_a86faf3f32d386e19e4a8e274e565e2f)
+        ;
+
+        
+    
+    
+            var marker_56992e76dd9988db686e59f4ea1e984a = L.marker(
+                [12.102835, 76.623896],
+                {}
+            ).addTo(map_470f3a5194cfdc81eb36f5c7225e6588);
+        
+    
+        var custom_icon_61d49ad1f6525c7d5813c339877635e2 = L.icon({"iconSize": [30, 30], "iconUrl": "https://static.vecteezy.com/system/resources/thumbnails/012/042/301/small_2x/warning-sign-icon-transparent-background-free-png.png"});
+        marker_56992e76dd9988db686e59f4ea1e984a.setIcon(custom_icon_61d49ad1f6525c7d5813c339877635e2);
+        
+    
+        var popup_c0fe1c07111de396bec71f4a406c149a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ba0530dfffa766ffcdfdd276d484829d = $(`<div id="html_ba0530dfffa766ffcdfdd276d484829d" style="width: 100.0%; height: 100.0%;">         <div style="text-align: center;">             <p style="font-size:15px;font-weight:bold">TAKE ACTION</p>             <img src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/02/07/Pictures/assignment-name-in-brief_a84b7010-2ab7-11e9-b7de-6a9a06b91305.JPG" style="width:100%;max-width:300px;">             <p>Footpath unmaintained</p>             <a href="/alert_explain/?lat=12.102835&lon=76.623896" target="_blank">View details</a>'         </div>         </div>`)[0];
+                popup_c0fe1c07111de396bec71f4a406c149a.setContent(html_ba0530dfffa766ffcdfdd276d484829d);
+            
+        
+
+        marker_56992e76dd9988db686e59f4ea1e984a.bindPopup(popup_c0fe1c07111de396bec71f4a406c149a)
+        ;
+
+        
+    
+    
+            var marker_de45aedcfe8e7253655372ed0c7b60cc = L.marker(
+                [12.013057, 77.279907],
+                {}
+            ).addTo(map_470f3a5194cfdc81eb36f5c7225e6588);
+        
+    
+        var custom_icon_2d95e755bd352dfa21faffd36edaee13 = L.icon({"iconSize": [30, 30], "iconUrl": "https://static.vecteezy.com/system/resources/thumbnails/012/042/301/small_2x/warning-sign-icon-transparent-background-free-png.png"});
+        marker_de45aedcfe8e7253655372ed0c7b60cc.setIcon(custom_icon_2d95e755bd352dfa21faffd36edaee13);
+        
+    
+        var popup_b44f706678f24d5e5f55dee68aff29ea = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f93fec243d294ddd329f997c441d2f8f = $(`<div id="html_f93fec243d294ddd329f997c441d2f8f" style="width: 100.0%; height: 100.0%;">         <div style="text-align: center;">             <p style="font-size:15px;font-weight:bold">TAKE ACTION</p>             <img src="https://static.toiimg.com/thumb/msid-87859767,width-1280,height-720,resizemode-72/87859767.jpg" style="width:100%;max-width:300px;">             <p>Lane Violations & traffic</p>             <a href="/alert_explain/?lat=12.013057&lon=77.279907" target="_blank">View details</a>'         </div>         </div>`)[0];
+                popup_b44f706678f24d5e5f55dee68aff29ea.setContent(html_f93fec243d294ddd329f997c441d2f8f);
+            
+        
+
+        marker_de45aedcfe8e7253655372ed0c7b60cc.bindPopup(popup_b44f706678f24d5e5f55dee68aff29ea)
+        ;
+
+        
+    
+    
+            var marker_ccf6020dc31806a24a2983fb4040a615 = L.marker(
+                [12.467215, 77.359544],
+                {}
+            ).addTo(map_470f3a5194cfdc81eb36f5c7225e6588);
+        
+    
+        var custom_icon_464e59578278ad436fea115336588270 = L.icon({"iconSize": [30, 30], "iconUrl": "https://static.vecteezy.com/system/resources/thumbnails/012/042/301/small_2x/warning-sign-icon-transparent-background-free-png.png"});
+        marker_ccf6020dc31806a24a2983fb4040a615.setIcon(custom_icon_464e59578278ad436fea115336588270);
+        
+    
+        var popup_2bfbb8012396fbf1e290a0524228bdf2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2093eb7139f0e8ed21c0a999d78f8967 = $(`<div id="html_2093eb7139f0e8ed21c0a999d78f8967" style="width: 100.0%; height: 100.0%;">         <div style="text-align: center;">             <p style="font-size:15px;font-weight:bold">TAKE ACTION</p>             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSwK2mq2zT2WznHzV46LxsWTr8LjNHCJwJ371aRu7-MBUrlaDDpObBGEttNeFYMD-XKag&usqp=CAU" style="width:100%;max-width:300px;">             <p>No Proper Street Lights</p>             <a href="/alert_explain/?lat=12.467215&lon=77.359544" target="_blank">View details</a>'         </div>         </div>`)[0];
+                popup_2bfbb8012396fbf1e290a0524228bdf2.setContent(html_2093eb7139f0e8ed21c0a999d78f8967);
+            
+        
+
+        marker_ccf6020dc31806a24a2983fb4040a615.bindPopup(popup_2bfbb8012396fbf1e290a0524228bdf2)
+        ;
+
+        
+    
+    
+            var marker_c7aca3b5f7405f6bde84109c87e6140b = L.marker(
+                [12.265638, 76.657508],
+                {}
+            ).addTo(map_470f3a5194cfdc81eb36f5c7225e6588);
+        
+    
+        var custom_icon_3cb9c027b04bb77b6f73a25f387b6a53 = L.icon({"iconSize": [30, 30], "iconUrl": "https://static.vecteezy.com/system/resources/thumbnails/012/042/301/small_2x/warning-sign-icon-transparent-background-free-png.png"});
+        marker_c7aca3b5f7405f6bde84109c87e6140b.setIcon(custom_icon_3cb9c027b04bb77b6f73a25f387b6a53);
+        
+    
+        var popup_95b238e21c41d7da4d40ab269d12f73f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6a7fb77052d970119e7dcb16437a83bc = $(`<div id="html_6a7fb77052d970119e7dcb16437a83bc" style="width: 100.0%; height: 100.0%;">         <div style="text-align: center;">             <p style="font-size:15px;font-weight:bold">TAKE ACTION</p>             <img src="https://static.toiimg.com/photo/imgsize-171492,msid-97614185/97614185.jpg" style="width:100%;max-width:300px;">             <p>Broken Footpaths</p>             <a href="/alert_explain/?lat=12.265638&lon=76.657508" target="_blank">View details</a>'         </div>         </div>`)[0];
+                popup_95b238e21c41d7da4d40ab269d12f73f.setContent(html_6a7fb77052d970119e7dcb16437a83bc);
+            
+        
+
+        marker_c7aca3b5f7405f6bde84109c87e6140b.bindPopup(popup_95b238e21c41d7da4d40ab269d12f73f)
+        ;
+
+        
+    
+</script>
+</html>

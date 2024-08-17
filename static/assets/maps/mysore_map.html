@@ -1,0 +1,2393 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_77046443d1bfefeb08395ed2c1d30817 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_77046443d1bfefeb08395ed2c1d30817" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_77046443d1bfefeb08395ed2c1d30817 = L.map(
+                "map_77046443d1bfefeb08395ed2c1d30817",
+                {
+                    center: [6.745896, 68.458214],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_72a9a6d5197ca13e1fa689049740016a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_72a9a6d5197ca13e1fa689049740016a.addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+            var marker_cluster_dbbfe21936af54b87bcee82779a1f80c = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            marker_cluster_dbbfe21936af54b87bcee82779a1f80c.addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+            var circle_marker_99889838e555ff0aaa7e4dac3089937f = L.circleMarker(
+                [6.752783, 68.177512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_881785d081a14491700652ce7e76d991 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_441333d7a4874199e843fd3f69492e88 = $(`<div id="html_441333d7a4874199e843fd3f69492e88" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=6.752783&lon=68.177512" target="_blank">Click for analysis</a></div>`)[0];
+                popup_881785d081a14491700652ce7e76d991.setContent(html_441333d7a4874199e843fd3f69492e88);
+            
+        
+
+        circle_marker_99889838e555ff0aaa7e4dac3089937f.bindPopup(popup_881785d081a14491700652ce7e76d991)
+        ;
+
+        
+    
+    
+            var circle_marker_a32f95f268e8588616d6baf47cfd1e33 = L.circleMarker(
+                [12.023568, 76.013183],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_f3a7ded7cb6a3430ab78888ceb59b226 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d036e63b4e223267681072c6143e5ac = $(`<div id="html_4d036e63b4e223267681072c6143e5ac" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.023568&lon=76.013183" target="_blank">Click for analysis</a></div>`)[0];
+                popup_f3a7ded7cb6a3430ab78888ceb59b226.setContent(html_4d036e63b4e223267681072c6143e5ac);
+            
+        
+
+        circle_marker_a32f95f268e8588616d6baf47cfd1e33.bindPopup(popup_f3a7ded7cb6a3430ab78888ceb59b226)
+        ;
+
+        
+    
+    
+            var circle_marker_4d5e095ccbf783c5d32840a84e3e292c = L.circleMarker(
+                [12.562466, 75.464497],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_d84542ef1f6f85d6bff22772549e649a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_034c671edbd729c1b265bb397641592e = $(`<div id="html_034c671edbd729c1b265bb397641592e" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.562466&lon=75.464497" target="_blank">Click for analysis</a></div>`)[0];
+                popup_d84542ef1f6f85d6bff22772549e649a.setContent(html_034c671edbd729c1b265bb397641592e);
+            
+        
+
+        circle_marker_4d5e095ccbf783c5d32840a84e3e292c.bindPopup(popup_d84542ef1f6f85d6bff22772549e649a)
+        ;
+
+        
+    
+    
+            var circle_marker_2274a1576c0f0616e353870949bbb2b3 = L.circleMarker(
+                [12.657895, 75.779795],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_2c0c644fa755a169247c4969823b8cc1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74dfa0e3486a95e1c5fd1bf4e2e41b45 = $(`<div id="html_74dfa0e3486a95e1c5fd1bf4e2e41b45" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.657895&lon=75.779795" target="_blank">Click for analysis</a></div>`)[0];
+                popup_2c0c644fa755a169247c4969823b8cc1.setContent(html_74dfa0e3486a95e1c5fd1bf4e2e41b45);
+            
+        
+
+        circle_marker_2274a1576c0f0616e353870949bbb2b3.bindPopup(popup_2c0c644fa755a169247c4969823b8cc1)
+        ;
+
+        
+    
+    
+            var circle_marker_17ab6da669129007a07c7ddaf8b327e4 = L.circleMarker(
+                [12.691445, 76.080841],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_2c7318b227dffa283834880b46aed126 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c87d7c9b69a8347edaab3780ea1a93c = $(`<div id="html_1c87d7c9b69a8347edaab3780ea1a93c" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.691445&lon=76.080841" target="_blank">Click for analysis</a></div>`)[0];
+                popup_2c7318b227dffa283834880b46aed126.setContent(html_1c87d7c9b69a8347edaab3780ea1a93c);
+            
+        
+
+        circle_marker_17ab6da669129007a07c7ddaf8b327e4.bindPopup(popup_2c7318b227dffa283834880b46aed126)
+        ;
+
+        
+    
+    
+            var circle_marker_1105f2a5e95ea42e54d26f6b9d54c869 = L.circleMarker(
+                [12.701387, 76.081424],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_b9d9d46aaf8dbdc88946d5328fe4df49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a02eb714ad74b861ae7ab3771f48bda = $(`<div id="html_4a02eb714ad74b861ae7ab3771f48bda" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.701387&lon=76.081424" target="_blank">Click for analysis</a></div>`)[0];
+                popup_b9d9d46aaf8dbdc88946d5328fe4df49.setContent(html_4a02eb714ad74b861ae7ab3771f48bda);
+            
+        
+
+        circle_marker_1105f2a5e95ea42e54d26f6b9d54c869.bindPopup(popup_b9d9d46aaf8dbdc88946d5328fe4df49)
+        ;
+
+        
+    
+    
+            var circle_marker_e93daf85649aaa9fe6b046843b32cc0f = L.circleMarker(
+                [12.721647, 76.049384],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_3393ff4e21846a1ee8defddf0b5415a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c6694acc44968dab4b3a8594eac36a1 = $(`<div id="html_4c6694acc44968dab4b3a8594eac36a1" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.721647&lon=76.049384" target="_blank">Click for analysis</a></div>`)[0];
+                popup_3393ff4e21846a1ee8defddf0b5415a7.setContent(html_4c6694acc44968dab4b3a8594eac36a1);
+            
+        
+
+        circle_marker_e93daf85649aaa9fe6b046843b32cc0f.bindPopup(popup_3393ff4e21846a1ee8defddf0b5415a7)
+        ;
+
+        
+    
+    
+            var circle_marker_8243d151966b51bcc468109ffa96f901 = L.circleMarker(
+                [12.742238, 76.072311],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_0dc82c601b66afcd6ed8c1dfe5b35118 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5540365626bad9b82339ea0f332892a = $(`<div id="html_e5540365626bad9b82339ea0f332892a" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.742238&lon=76.072311" target="_blank">Click for analysis</a></div>`)[0];
+                popup_0dc82c601b66afcd6ed8c1dfe5b35118.setContent(html_e5540365626bad9b82339ea0f332892a);
+            
+        
+
+        circle_marker_8243d151966b51bcc468109ffa96f901.bindPopup(popup_0dc82c601b66afcd6ed8c1dfe5b35118)
+        ;
+
+        
+    
+    
+            var circle_marker_1363fc93b05c369f1181ae5cdb5fefb6 = L.circleMarker(
+                [12.754633, 76.0693509],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_8d4aa961d82e30fa32783deb37fac1b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1dac7843a16e2cde2de78242e4a946a = $(`<div id="html_c1dac7843a16e2cde2de78242e4a946a" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.754633&lon=76.0693509" target="_blank">Click for analysis</a></div>`)[0];
+                popup_8d4aa961d82e30fa32783deb37fac1b0.setContent(html_c1dac7843a16e2cde2de78242e4a946a);
+            
+        
+
+        circle_marker_1363fc93b05c369f1181ae5cdb5fefb6.bindPopup(popup_8d4aa961d82e30fa32783deb37fac1b0)
+        ;
+
+        
+    
+    
+            var circle_marker_f43b03cf835cc7c30ebe6ec36a561f73 = L.circleMarker(
+                [12.763735, 76.057729],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_57d9a5a78231efcfd0e1f8f75426c893 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86e58090d4c42969776c2d55c1fdfb77 = $(`<div id="html_86e58090d4c42969776c2d55c1fdfb77" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.763735&lon=76.057729" target="_blank">Click for analysis</a></div>`)[0];
+                popup_57d9a5a78231efcfd0e1f8f75426c893.setContent(html_86e58090d4c42969776c2d55c1fdfb77);
+            
+        
+
+        circle_marker_f43b03cf835cc7c30ebe6ec36a561f73.bindPopup(popup_57d9a5a78231efcfd0e1f8f75426c893)
+        ;
+
+        
+    
+    
+            var circle_marker_7b494bc36e00cefd12d765bd30996ccd = L.circleMarker(
+                [12.76398, 76.064091],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_ae0f59127253e55ecad66e01eee661a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2aadd2fef885073e1da90c3669059f5 = $(`<div id="html_d2aadd2fef885073e1da90c3669059f5" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.76398&lon=76.064091" target="_blank">Click for analysis</a></div>`)[0];
+                popup_ae0f59127253e55ecad66e01eee661a3.setContent(html_d2aadd2fef885073e1da90c3669059f5);
+            
+        
+
+        circle_marker_7b494bc36e00cefd12d765bd30996ccd.bindPopup(popup_ae0f59127253e55ecad66e01eee661a3)
+        ;
+
+        
+    
+    
+            var circle_marker_48f0d87d84d8cfc186a1bce560531736 = L.circleMarker(
+                [12.764331, 76.068625],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_7da67ecf123f1ccb183f6a9836649d7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f162a1563340fbb89f68275132a6a56 = $(`<div id="html_5f162a1563340fbb89f68275132a6a56" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.764331&lon=76.068625" target="_blank">Click for analysis</a></div>`)[0];
+                popup_7da67ecf123f1ccb183f6a9836649d7c.setContent(html_5f162a1563340fbb89f68275132a6a56);
+            
+        
+
+        circle_marker_48f0d87d84d8cfc186a1bce560531736.bindPopup(popup_7da67ecf123f1ccb183f6a9836649d7c)
+        ;
+
+        
+    
+    
+            var circle_marker_374d120679f3487b4053e4290476c84f = L.circleMarker(
+                [12.766025, 76.071102],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_3cde0174e8a5d8b071bfcdd9f9d10250 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c306501c60c91a1f2839e8542b9757d0 = $(`<div id="html_c306501c60c91a1f2839e8542b9757d0" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.766025&lon=76.071102" target="_blank">Click for analysis</a></div>`)[0];
+                popup_3cde0174e8a5d8b071bfcdd9f9d10250.setContent(html_c306501c60c91a1f2839e8542b9757d0);
+            
+        
+
+        circle_marker_374d120679f3487b4053e4290476c84f.bindPopup(popup_3cde0174e8a5d8b071bfcdd9f9d10250)
+        ;
+
+        
+    
+    
+            var circle_marker_f4474b89225c5d7719dbf02c730d7d49 = L.circleMarker(
+                [12.766397, 76.060349],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_add497696fe6289df92906fe141953ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5668f0466fa4a7bc93a66a21f72f227 = $(`<div id="html_d5668f0466fa4a7bc93a66a21f72f227" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.766397&lon=76.060349" target="_blank">Click for analysis</a></div>`)[0];
+                popup_add497696fe6289df92906fe141953ef.setContent(html_d5668f0466fa4a7bc93a66a21f72f227);
+            
+        
+
+        circle_marker_f4474b89225c5d7719dbf02c730d7d49.bindPopup(popup_add497696fe6289df92906fe141953ef)
+        ;
+
+        
+    
+    
+            var circle_marker_1340c657c0ad691cc333e5b91e3da0e7 = L.circleMarker(
+                [12.767917, 76.047282],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_e5f1de9634ba1dc8412bc3ae224fbfd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b9382fe88cd7d33cb21c61aca5a2c45 = $(`<div id="html_0b9382fe88cd7d33cb21c61aca5a2c45" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.767917&lon=76.047282" target="_blank">Click for analysis</a></div>`)[0];
+                popup_e5f1de9634ba1dc8412bc3ae224fbfd8.setContent(html_0b9382fe88cd7d33cb21c61aca5a2c45);
+            
+        
+
+        circle_marker_1340c657c0ad691cc333e5b91e3da0e7.bindPopup(popup_e5f1de9634ba1dc8412bc3ae224fbfd8)
+        ;
+
+        
+    
+    
+            var circle_marker_4444164161ba133254109cc2dc035b40 = L.circleMarker(
+                [12.771715, 76.056015],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_17593a62ad3d11d5baf622542a3bbd01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5df41222f970e2a4017baa36a8ac91ce = $(`<div id="html_5df41222f970e2a4017baa36a8ac91ce" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.771715&lon=76.056015" target="_blank">Click for analysis</a></div>`)[0];
+                popup_17593a62ad3d11d5baf622542a3bbd01.setContent(html_5df41222f970e2a4017baa36a8ac91ce);
+            
+        
+
+        circle_marker_4444164161ba133254109cc2dc035b40.bindPopup(popup_17593a62ad3d11d5baf622542a3bbd01)
+        ;
+
+        
+    
+    
+            var circle_marker_4f2af2d5d6178f2fba70ce02ba080251 = L.circleMarker(
+                [12.781131, 76.054128],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_dd954d388dc4b912131b81f5b6129534 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e38d6a317430a3d7ab54e179d38ebfdc = $(`<div id="html_e38d6a317430a3d7ab54e179d38ebfdc" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.781131&lon=76.054128" target="_blank">Click for analysis</a></div>`)[0];
+                popup_dd954d388dc4b912131b81f5b6129534.setContent(html_e38d6a317430a3d7ab54e179d38ebfdc);
+            
+        
+
+        circle_marker_4f2af2d5d6178f2fba70ce02ba080251.bindPopup(popup_dd954d388dc4b912131b81f5b6129534)
+        ;
+
+        
+    
+    
+            var circle_marker_49bca286e8b37ae7dd6ede970c5c8f0d = L.circleMarker(
+                [12.859019, 76.485507],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_5edc9839f3841ec4df8627de730250ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16a7f523e540fc972734a0337c874073 = $(`<div id="html_16a7f523e540fc972734a0337c874073" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.859019&lon=76.485507" target="_blank">Click for analysis</a></div>`)[0];
+                popup_5edc9839f3841ec4df8627de730250ba.setContent(html_16a7f523e540fc972734a0337c874073);
+            
+        
+
+        circle_marker_49bca286e8b37ae7dd6ede970c5c8f0d.bindPopup(popup_5edc9839f3841ec4df8627de730250ba)
+        ;
+
+        
+    
+    
+            var circle_marker_395451724e8584b57b93ab10c00ab188 = L.circleMarker(
+                [12.881919, 76.364356],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_7c1bfa59819a8b50570b457270500b51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b878d2f82f45bf949f24676c3d6c4c7 = $(`<div id="html_6b878d2f82f45bf949f24676c3d6c4c7" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.881919&lon=76.364356" target="_blank">Click for analysis</a></div>`)[0];
+                popup_7c1bfa59819a8b50570b457270500b51.setContent(html_6b878d2f82f45bf949f24676c3d6c4c7);
+            
+        
+
+        circle_marker_395451724e8584b57b93ab10c00ab188.bindPopup(popup_7c1bfa59819a8b50570b457270500b51)
+        ;
+
+        
+    
+    
+            var circle_marker_621c65119acf9dd3f670befbea97be01 = L.circleMarker(
+                [12.884543, 76.020828],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_07760f33400beeb96f92d8e7d1b66ffa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d50b1526b889bee19f3d0421359a4af = $(`<div id="html_8d50b1526b889bee19f3d0421359a4af" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.884543&lon=76.020828" target="_blank">Click for analysis</a></div>`)[0];
+                popup_07760f33400beeb96f92d8e7d1b66ffa.setContent(html_8d50b1526b889bee19f3d0421359a4af);
+            
+        
+
+        circle_marker_621c65119acf9dd3f670befbea97be01.bindPopup(popup_07760f33400beeb96f92d8e7d1b66ffa)
+        ;
+
+        
+    
+    
+            var circle_marker_b6d059fa2eeb51c3cfc5bf1a5da5b9b2 = L.circleMarker(
+                [12.890246, 76.368962],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_bfbefb6cc1f7f90f4875f75db8563b50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d02b55e3a1f1a630a529832cca04a7b7 = $(`<div id="html_d02b55e3a1f1a630a529832cca04a7b7" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.890246&lon=76.368962" target="_blank">Click for analysis</a></div>`)[0];
+                popup_bfbefb6cc1f7f90f4875f75db8563b50.setContent(html_d02b55e3a1f1a630a529832cca04a7b7);
+            
+        
+
+        circle_marker_b6d059fa2eeb51c3cfc5bf1a5da5b9b2.bindPopup(popup_bfbefb6cc1f7f90f4875f75db8563b50)
+        ;
+
+        
+    
+    
+            var circle_marker_9b622cf23ad98db91f70edd41cccd89d = L.circleMarker(
+                [12.893543, 76.160592],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_e92da74770f9585083d1dc1010681505 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ed675f348169103f5ee875f68c9958a = $(`<div id="html_7ed675f348169103f5ee875f68c9958a" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.893543&lon=76.160592" target="_blank">Click for analysis</a></div>`)[0];
+                popup_e92da74770f9585083d1dc1010681505.setContent(html_7ed675f348169103f5ee875f68c9958a);
+            
+        
+
+        circle_marker_9b622cf23ad98db91f70edd41cccd89d.bindPopup(popup_e92da74770f9585083d1dc1010681505)
+        ;
+
+        
+    
+    
+            var circle_marker_4ce859a8f67cde4975cb21a4c3c5599d = L.circleMarker(
+                [12.895066, 76.403051],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_24101f3ccf3897435d8fbf83a409661d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6da9bb0616e5af4d11846b2382e9c067 = $(`<div id="html_6da9bb0616e5af4d11846b2382e9c067" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.895066&lon=76.403051" target="_blank">Click for analysis</a></div>`)[0];
+                popup_24101f3ccf3897435d8fbf83a409661d.setContent(html_6da9bb0616e5af4d11846b2382e9c067);
+            
+        
+
+        circle_marker_4ce859a8f67cde4975cb21a4c3c5599d.bindPopup(popup_24101f3ccf3897435d8fbf83a409661d)
+        ;
+
+        
+    
+    
+            var circle_marker_f63a67deb2077cab8d58922312b85ec6 = L.circleMarker(
+                [12.897851, 76.398023],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_88c390fd270031f5872a0e39f7aab477 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5beef89dffe0156b5824e1c9b2ac9c0 = $(`<div id="html_d5beef89dffe0156b5824e1c9b2ac9c0" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.897851&lon=76.398023" target="_blank">Click for analysis</a></div>`)[0];
+                popup_88c390fd270031f5872a0e39f7aab477.setContent(html_d5beef89dffe0156b5824e1c9b2ac9c0);
+            
+        
+
+        circle_marker_f63a67deb2077cab8d58922312b85ec6.bindPopup(popup_88c390fd270031f5872a0e39f7aab477)
+        ;
+
+        
+    
+    
+            var circle_marker_ab1a63db824527b37e81dff4aec96d28 = L.circleMarker(
+                [12.901451, 76.3826369],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_09824578c4c150b57db40dbc8d9e1a81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e9df6ee5dfcdb42ae168656025d7b4e = $(`<div id="html_2e9df6ee5dfcdb42ae168656025d7b4e" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.901451&lon=76.3826369" target="_blank">Click for analysis</a></div>`)[0];
+                popup_09824578c4c150b57db40dbc8d9e1a81.setContent(html_2e9df6ee5dfcdb42ae168656025d7b4e);
+            
+        
+
+        circle_marker_ab1a63db824527b37e81dff4aec96d28.bindPopup(popup_09824578c4c150b57db40dbc8d9e1a81)
+        ;
+
+        
+    
+    
+            var circle_marker_6ea595acbfddf89310011fea57ca5c34 = L.circleMarker(
+                [12.904067, 76.3894299],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_f63e12666c3b7daa2d44d897e4388cd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c88352b0c9a3efc635afd8dab6fb553c = $(`<div id="html_c88352b0c9a3efc635afd8dab6fb553c" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.904067&lon=76.3894299" target="_blank">Click for analysis</a></div>`)[0];
+                popup_f63e12666c3b7daa2d44d897e4388cd5.setContent(html_c88352b0c9a3efc635afd8dab6fb553c);
+            
+        
+
+        circle_marker_6ea595acbfddf89310011fea57ca5c34.bindPopup(popup_f63e12666c3b7daa2d44d897e4388cd5)
+        ;
+
+        
+    
+    
+            var circle_marker_219386a7680364891ed6d465f6901225 = L.circleMarker(
+                [12.906054, 76.391311],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_a0353c4def3d1ccd903e12bd9fe09ffc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a13114747e293fcde69477f47d7995d = $(`<div id="html_4a13114747e293fcde69477f47d7995d" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.906054&lon=76.391311" target="_blank">Click for analysis</a></div>`)[0];
+                popup_a0353c4def3d1ccd903e12bd9fe09ffc.setContent(html_4a13114747e293fcde69477f47d7995d);
+            
+        
+
+        circle_marker_219386a7680364891ed6d465f6901225.bindPopup(popup_a0353c4def3d1ccd903e12bd9fe09ffc)
+        ;
+
+        
+    
+    
+            var circle_marker_545655ea51f3dbf7e2d94b12fd7a188a = L.circleMarker(
+                [12.907282, 76.425255],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_317704058cb3f8d2ce7fa1e1b4176393 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8aec5ca12d7fe27a9b6c9a68236e16e4 = $(`<div id="html_8aec5ca12d7fe27a9b6c9a68236e16e4" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.907282&lon=76.425255" target="_blank">Click for analysis</a></div>`)[0];
+                popup_317704058cb3f8d2ce7fa1e1b4176393.setContent(html_8aec5ca12d7fe27a9b6c9a68236e16e4);
+            
+        
+
+        circle_marker_545655ea51f3dbf7e2d94b12fd7a188a.bindPopup(popup_317704058cb3f8d2ce7fa1e1b4176393)
+        ;
+
+        
+    
+    
+            var circle_marker_e8d5b9d6ec5b8b61ef6c8ed00a6d86e1 = L.circleMarker(
+                [12.910869, 76.383368],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_41ee337dd4fc215f63b932a9ef403320 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_786259d6d73a0d09ccfae71900576718 = $(`<div id="html_786259d6d73a0d09ccfae71900576718" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.910869&lon=76.383368" target="_blank">Click for analysis</a></div>`)[0];
+                popup_41ee337dd4fc215f63b932a9ef403320.setContent(html_786259d6d73a0d09ccfae71900576718);
+            
+        
+
+        circle_marker_e8d5b9d6ec5b8b61ef6c8ed00a6d86e1.bindPopup(popup_41ee337dd4fc215f63b932a9ef403320)
+        ;
+
+        
+    
+    
+            var circle_marker_80ce5a40a9bd360497b742f644f545ab = L.circleMarker(
+                [12.91287, 76.392633],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_eff8647c33b5c01fe2a3cd30684e4772 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2f3802177d5b3a8dbc131d2de361d83 = $(`<div id="html_e2f3802177d5b3a8dbc131d2de361d83" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.91287&lon=76.392633" target="_blank">Click for analysis</a></div>`)[0];
+                popup_eff8647c33b5c01fe2a3cd30684e4772.setContent(html_e2f3802177d5b3a8dbc131d2de361d83);
+            
+        
+
+        circle_marker_80ce5a40a9bd360497b742f644f545ab.bindPopup(popup_eff8647c33b5c01fe2a3cd30684e4772)
+        ;
+
+        
+    
+    
+            var circle_marker_642263e0a1b2c9e85819958d4a0a7549 = L.circleMarker(
+                [12.913305, 76.452293],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_e41da21ff038e80485aeae658ab6252f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1d181ee4b933f407b81c039245366d7 = $(`<div id="html_e1d181ee4b933f407b81c039245366d7" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.913305&lon=76.452293" target="_blank">Click for analysis</a></div>`)[0];
+                popup_e41da21ff038e80485aeae658ab6252f.setContent(html_e1d181ee4b933f407b81c039245366d7);
+            
+        
+
+        circle_marker_642263e0a1b2c9e85819958d4a0a7549.bindPopup(popup_e41da21ff038e80485aeae658ab6252f)
+        ;
+
+        
+    
+    
+            var circle_marker_7cb4c636313ce5fc39a151b2ffb6752f = L.circleMarker(
+                [12.914798, 76.38002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_dd5080af0654a7461adf7e0abc4f7277 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98870ede5c6412ac1d8a9efd1c79c0f8 = $(`<div id="html_98870ede5c6412ac1d8a9efd1c79c0f8" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.914798&lon=76.38002" target="_blank">Click for analysis</a></div>`)[0];
+                popup_dd5080af0654a7461adf7e0abc4f7277.setContent(html_98870ede5c6412ac1d8a9efd1c79c0f8);
+            
+        
+
+        circle_marker_7cb4c636313ce5fc39a151b2ffb6752f.bindPopup(popup_dd5080af0654a7461adf7e0abc4f7277)
+        ;
+
+        
+    
+    
+            var circle_marker_60bc19faedce64e0773fdb7a6f4a812c = L.circleMarker(
+                [12.917891, 76.467248],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_3bd3b541f61efd562b193bbb250f0f8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_004c30d2f860ea101f59e45d31650aa6 = $(`<div id="html_004c30d2f860ea101f59e45d31650aa6" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.917891&lon=76.467248" target="_blank">Click for analysis</a></div>`)[0];
+                popup_3bd3b541f61efd562b193bbb250f0f8c.setContent(html_004c30d2f860ea101f59e45d31650aa6);
+            
+        
+
+        circle_marker_60bc19faedce64e0773fdb7a6f4a812c.bindPopup(popup_3bd3b541f61efd562b193bbb250f0f8c)
+        ;
+
+        
+    
+    
+            var circle_marker_21e4c314fe9cf69a6415fccd64f745ac = L.circleMarker(
+                [12.919196, 76.480852],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_e72f40e83dbf027ef1eb946caadf7152 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db6ccebfcabc66138e2fc9d437bbad05 = $(`<div id="html_db6ccebfcabc66138e2fc9d437bbad05" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.919196&lon=76.480852" target="_blank">Click for analysis</a></div>`)[0];
+                popup_e72f40e83dbf027ef1eb946caadf7152.setContent(html_db6ccebfcabc66138e2fc9d437bbad05);
+            
+        
+
+        circle_marker_21e4c314fe9cf69a6415fccd64f745ac.bindPopup(popup_e72f40e83dbf027ef1eb946caadf7152)
+        ;
+
+        
+    
+    
+            var circle_marker_3965723a6dff51ce05c994899bf23e94 = L.circleMarker(
+                [12.919523, 76.471939],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_d2961677e81eb0a957cf52b25eecac67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0e1f059ea545de09d9b2c90d226c2af = $(`<div id="html_e0e1f059ea545de09d9b2c90d226c2af" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.919523&lon=76.471939" target="_blank">Click for analysis</a></div>`)[0];
+                popup_d2961677e81eb0a957cf52b25eecac67.setContent(html_e0e1f059ea545de09d9b2c90d226c2af);
+            
+        
+
+        circle_marker_3965723a6dff51ce05c994899bf23e94.bindPopup(popup_d2961677e81eb0a957cf52b25eecac67)
+        ;
+
+        
+    
+    
+            var circle_marker_235e7880b12d7b67f1a71931afc9236e = L.circleMarker(
+                [12.921118, 76.371909],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_325172f9fd4d78a906c21c5c74fa90bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8818522cbc4bc8ddf2687f0b7bff382e = $(`<div id="html_8818522cbc4bc8ddf2687f0b7bff382e" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.921118&lon=76.371909" target="_blank">Click for analysis</a></div>`)[0];
+                popup_325172f9fd4d78a906c21c5c74fa90bf.setContent(html_8818522cbc4bc8ddf2687f0b7bff382e);
+            
+        
+
+        circle_marker_235e7880b12d7b67f1a71931afc9236e.bindPopup(popup_325172f9fd4d78a906c21c5c74fa90bf)
+        ;
+
+        
+    
+    
+            var circle_marker_309f993da00dbcbbfbb830f391029710 = L.circleMarker(
+                [12.922137, 76.133865],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_254cc8440da6b8c895a601bb86dc5c5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa1cb306a84653f601b77da7ab45953a = $(`<div id="html_fa1cb306a84653f601b77da7ab45953a" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.922137&lon=76.133865" target="_blank">Click for analysis</a></div>`)[0];
+                popup_254cc8440da6b8c895a601bb86dc5c5a.setContent(html_fa1cb306a84653f601b77da7ab45953a);
+            
+        
+
+        circle_marker_309f993da00dbcbbfbb830f391029710.bindPopup(popup_254cc8440da6b8c895a601bb86dc5c5a)
+        ;
+
+        
+    
+    
+            var circle_marker_99b59e3b10f6ccb89fdb033f1baf5316 = L.circleMarker(
+                [12.923316, 76.495543],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_a35aede8cf1f861fb5103d0d113f54e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91176bdc6b444488be6440fb2334270b = $(`<div id="html_91176bdc6b444488be6440fb2334270b" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.923316&lon=76.495543" target="_blank">Click for analysis</a></div>`)[0];
+                popup_a35aede8cf1f861fb5103d0d113f54e6.setContent(html_91176bdc6b444488be6440fb2334270b);
+            
+        
+
+        circle_marker_99b59e3b10f6ccb89fdb033f1baf5316.bindPopup(popup_a35aede8cf1f861fb5103d0d113f54e6)
+        ;
+
+        
+    
+    
+            var circle_marker_8c755abe3425a708be29bfcd1ba3e7f9 = L.circleMarker(
+                [12.927065, 76.50834],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_876eedb601209b5589d6507f14a68983 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_381679cf66fb21591a4af336c821efc3 = $(`<div id="html_381679cf66fb21591a4af336c821efc3" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.927065&lon=76.50834" target="_blank">Click for analysis</a></div>`)[0];
+                popup_876eedb601209b5589d6507f14a68983.setContent(html_381679cf66fb21591a4af336c821efc3);
+            
+        
+
+        circle_marker_8c755abe3425a708be29bfcd1ba3e7f9.bindPopup(popup_876eedb601209b5589d6507f14a68983)
+        ;
+
+        
+    
+    
+            var circle_marker_8b040e0b16516b3e9326c6241307197a = L.circleMarker(
+                [12.928289, 76.407355],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_074bc053c10664e5a13b4c3572f3065f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5c5ed9efc2a5fde025daa345bf8c663 = $(`<div id="html_d5c5ed9efc2a5fde025daa345bf8c663" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.928289&lon=76.407355" target="_blank">Click for analysis</a></div>`)[0];
+                popup_074bc053c10664e5a13b4c3572f3065f.setContent(html_d5c5ed9efc2a5fde025daa345bf8c663);
+            
+        
+
+        circle_marker_8b040e0b16516b3e9326c6241307197a.bindPopup(popup_074bc053c10664e5a13b4c3572f3065f)
+        ;
+
+        
+    
+    
+            var circle_marker_7c86cb9a01b8f8bdc440434dcd020b0a = L.circleMarker(
+                [12.929862, 76.128344],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_8eb47a0ee841260b008267220726e515 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2b93ac25b4f6cf2e51c5edf8eedfd34 = $(`<div id="html_e2b93ac25b4f6cf2e51c5edf8eedfd34" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.929862&lon=76.128344" target="_blank">Click for analysis</a></div>`)[0];
+                popup_8eb47a0ee841260b008267220726e515.setContent(html_e2b93ac25b4f6cf2e51c5edf8eedfd34);
+            
+        
+
+        circle_marker_7c86cb9a01b8f8bdc440434dcd020b0a.bindPopup(popup_8eb47a0ee841260b008267220726e515)
+        ;
+
+        
+    
+    
+            var circle_marker_3b31de96a1a5654a849c091be7dc663b = L.circleMarker(
+                [12.934803, 76.389505],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_a5e9685ca2aee52823e3dcdbb0309e3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_893f02e98f1cd47413d60918ebc134d1 = $(`<div id="html_893f02e98f1cd47413d60918ebc134d1" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.934803&lon=76.389505" target="_blank">Click for analysis</a></div>`)[0];
+                popup_a5e9685ca2aee52823e3dcdbb0309e3b.setContent(html_893f02e98f1cd47413d60918ebc134d1);
+            
+        
+
+        circle_marker_3b31de96a1a5654a849c091be7dc663b.bindPopup(popup_a5e9685ca2aee52823e3dcdbb0309e3b)
+        ;
+
+        
+    
+    
+            var circle_marker_eabe0025655093ff973298a2e1da34e6 = L.circleMarker(
+                [12.938602, 76.373193],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_542a30b022b0c2cc6e4999b31f97162f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cc8fcb04d58f7742753c22e5f5963cd = $(`<div id="html_5cc8fcb04d58f7742753c22e5f5963cd" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.938602&lon=76.373193" target="_blank">Click for analysis</a></div>`)[0];
+                popup_542a30b022b0c2cc6e4999b31f97162f.setContent(html_5cc8fcb04d58f7742753c22e5f5963cd);
+            
+        
+
+        circle_marker_eabe0025655093ff973298a2e1da34e6.bindPopup(popup_542a30b022b0c2cc6e4999b31f97162f)
+        ;
+
+        
+    
+    
+            var circle_marker_1006a6b0e205425067a54cf764c7fd21 = L.circleMarker(
+                [12.939392, 76.3624269],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_6062c3242dc0aa1f043dbcc5ffbe7cc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e3fda9fac0504614ef7030ca4204c6f = $(`<div id="html_7e3fda9fac0504614ef7030ca4204c6f" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.939392&lon=76.3624269" target="_blank">Click for analysis</a></div>`)[0];
+                popup_6062c3242dc0aa1f043dbcc5ffbe7cc7.setContent(html_7e3fda9fac0504614ef7030ca4204c6f);
+            
+        
+
+        circle_marker_1006a6b0e205425067a54cf764c7fd21.bindPopup(popup_6062c3242dc0aa1f043dbcc5ffbe7cc7)
+        ;
+
+        
+    
+    
+            var circle_marker_74f3f9980cd96a497850dedba40a8354 = L.circleMarker(
+                [12.942647, 76.361687],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_ac9ce2a221fef7ab9eee813f2f14b3e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0946c6581c6380191a9a54fbdd6e690 = $(`<div id="html_f0946c6581c6380191a9a54fbdd6e690" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.942647&lon=76.361687" target="_blank">Click for analysis</a></div>`)[0];
+                popup_ac9ce2a221fef7ab9eee813f2f14b3e3.setContent(html_f0946c6581c6380191a9a54fbdd6e690);
+            
+        
+
+        circle_marker_74f3f9980cd96a497850dedba40a8354.bindPopup(popup_ac9ce2a221fef7ab9eee813f2f14b3e3)
+        ;
+
+        
+    
+    
+            var circle_marker_e9dcf7d83ec890e69d1f21b32abc60d2 = L.circleMarker(
+                [12.944305, 76.363906],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_85d71aa48a5c42ca1c5858a21ec7e64c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc4232455c6f8641f4be95c1362ad0a3 = $(`<div id="html_dc4232455c6f8641f4be95c1362ad0a3" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.944305&lon=76.363906" target="_blank">Click for analysis</a></div>`)[0];
+                popup_85d71aa48a5c42ca1c5858a21ec7e64c.setContent(html_dc4232455c6f8641f4be95c1362ad0a3);
+            
+        
+
+        circle_marker_e9dcf7d83ec890e69d1f21b32abc60d2.bindPopup(popup_85d71aa48a5c42ca1c5858a21ec7e64c)
+        ;
+
+        
+    
+    
+            var circle_marker_1242ce02d595a98c88095f2368993f67 = L.circleMarker(
+                [12.946148, 75.784893],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_91c7e5f21c81d711b9e09531ef2ee6c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_411b726dcbde715bea701bfb7b2b5d68 = $(`<div id="html_411b726dcbde715bea701bfb7b2b5d68" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.946148&lon=75.784893" target="_blank">Click for analysis</a></div>`)[0];
+                popup_91c7e5f21c81d711b9e09531ef2ee6c3.setContent(html_411b726dcbde715bea701bfb7b2b5d68);
+            
+        
+
+        circle_marker_1242ce02d595a98c88095f2368993f67.bindPopup(popup_91c7e5f21c81d711b9e09531ef2ee6c3)
+        ;
+
+        
+    
+    
+            var circle_marker_c7ca0bdfc72fc5d743b56921978df058 = L.circleMarker(
+                [12.952714, 76.334554],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_7b5cbbcdfadd71f0d8274a27a524a445 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b881d5e638387fcbbfe24644d3911e6 = $(`<div id="html_1b881d5e638387fcbbfe24644d3911e6" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.952714&lon=76.334554" target="_blank">Click for analysis</a></div>`)[0];
+                popup_7b5cbbcdfadd71f0d8274a27a524a445.setContent(html_1b881d5e638387fcbbfe24644d3911e6);
+            
+        
+
+        circle_marker_c7ca0bdfc72fc5d743b56921978df058.bindPopup(popup_7b5cbbcdfadd71f0d8274a27a524a445)
+        ;
+
+        
+    
+    
+            var circle_marker_9429e84e8b6aa53a7bff96857220ab7b = L.circleMarker(
+                [12.958099, 76.067158],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_1b26a70f4caf389ba58d8cc80f6ab28a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36a9eed53d15f1eb627969bb5c57e3a7 = $(`<div id="html_36a9eed53d15f1eb627969bb5c57e3a7" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.958099&lon=76.067158" target="_blank">Click for analysis</a></div>`)[0];
+                popup_1b26a70f4caf389ba58d8cc80f6ab28a.setContent(html_36a9eed53d15f1eb627969bb5c57e3a7);
+            
+        
+
+        circle_marker_9429e84e8b6aa53a7bff96857220ab7b.bindPopup(popup_1b26a70f4caf389ba58d8cc80f6ab28a)
+        ;
+
+        
+    
+    
+            var circle_marker_fee816c40773e7eac3ed25c71210523f = L.circleMarker(
+                [12.96998, 76.324714],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_f89fc8e19fc01a723c38d0062410af1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5021f047e855307fe21cb192d1cc341a = $(`<div id="html_5021f047e855307fe21cb192d1cc341a" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.96998&lon=76.324714" target="_blank">Click for analysis</a></div>`)[0];
+                popup_f89fc8e19fc01a723c38d0062410af1d.setContent(html_5021f047e855307fe21cb192d1cc341a);
+            
+        
+
+        circle_marker_fee816c40773e7eac3ed25c71210523f.bindPopup(popup_f89fc8e19fc01a723c38d0062410af1d)
+        ;
+
+        
+    
+    
+            var circle_marker_09b79eb881f8986830c25a0eb8c184c3 = L.circleMarker(
+                [12.972396, 76.115882],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_35e03afb34607e9aedd002525ac9bec5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b4045538a90b7a184292b78045502c0 = $(`<div id="html_2b4045538a90b7a184292b78045502c0" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.972396&lon=76.115882" target="_blank">Click for analysis</a></div>`)[0];
+                popup_35e03afb34607e9aedd002525ac9bec5.setContent(html_2b4045538a90b7a184292b78045502c0);
+            
+        
+
+        circle_marker_09b79eb881f8986830c25a0eb8c184c3.bindPopup(popup_35e03afb34607e9aedd002525ac9bec5)
+        ;
+
+        
+    
+    
+            var circle_marker_a0ae98051bee5637cff65816a578e1d5 = L.circleMarker(
+                [12.974473, 76.26038],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_adfd31abc30ed85c6b6470f7d5388f79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29eb0a90e8ca7944a3fd0d99539a6919 = $(`<div id="html_29eb0a90e8ca7944a3fd0d99539a6919" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.974473&lon=76.26038" target="_blank">Click for analysis</a></div>`)[0];
+                popup_adfd31abc30ed85c6b6470f7d5388f79.setContent(html_29eb0a90e8ca7944a3fd0d99539a6919);
+            
+        
+
+        circle_marker_a0ae98051bee5637cff65816a578e1d5.bindPopup(popup_adfd31abc30ed85c6b6470f7d5388f79)
+        ;
+
+        
+    
+    
+            var circle_marker_426def983bea7e80b5d0ad766f220250 = L.circleMarker(
+                [12.976026, 76.114934],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_67ff3f3d1f9468aee667d6d693fc0338 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7df35d56b1fcc0643342e7858e0aa4d = $(`<div id="html_b7df35d56b1fcc0643342e7858e0aa4d" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.976026&lon=76.114934" target="_blank">Click for analysis</a></div>`)[0];
+                popup_67ff3f3d1f9468aee667d6d693fc0338.setContent(html_b7df35d56b1fcc0643342e7858e0aa4d);
+            
+        
+
+        circle_marker_426def983bea7e80b5d0ad766f220250.bindPopup(popup_67ff3f3d1f9468aee667d6d693fc0338)
+        ;
+
+        
+    
+    
+            var circle_marker_be4ebd5e0e91c8aedec08c08aa37f709 = L.circleMarker(
+                [12.976757, 76.255726],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_83df8564274ae705103524696886178f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7030cc0b23cbf8ae069dfcff540a4d01 = $(`<div id="html_7030cc0b23cbf8ae069dfcff540a4d01" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.976757&lon=76.255726" target="_blank">Click for analysis</a></div>`)[0];
+                popup_83df8564274ae705103524696886178f.setContent(html_7030cc0b23cbf8ae069dfcff540a4d01);
+            
+        
+
+        circle_marker_be4ebd5e0e91c8aedec08c08aa37f709.bindPopup(popup_83df8564274ae705103524696886178f)
+        ;
+
+        
+    
+    
+            var circle_marker_2fbec270d93fb3f427c8d2b02378c711 = L.circleMarker(
+                [12.977288, 76.2368639],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_633938396953dd73b7b22e2a0b1a86a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fcf130611f4cfc7cc9a95f680f6236a = $(`<div id="html_4fcf130611f4cfc7cc9a95f680f6236a" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.977288&lon=76.2368639" target="_blank">Click for analysis</a></div>`)[0];
+                popup_633938396953dd73b7b22e2a0b1a86a4.setContent(html_4fcf130611f4cfc7cc9a95f680f6236a);
+            
+        
+
+        circle_marker_2fbec270d93fb3f427c8d2b02378c711.bindPopup(popup_633938396953dd73b7b22e2a0b1a86a4)
+        ;
+
+        
+    
+    
+            var circle_marker_eb2fa0133c66e2ac3c1ab5f933d390df = L.circleMarker(
+                [12.97761, 76.245039],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_fc4608650cdf6725ee598d7b8e8053a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f9e465c5e9d68933696e40c53eb5d4c = $(`<div id="html_1f9e465c5e9d68933696e40c53eb5d4c" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.97761&lon=76.245039" target="_blank">Click for analysis</a></div>`)[0];
+                popup_fc4608650cdf6725ee598d7b8e8053a2.setContent(html_1f9e465c5e9d68933696e40c53eb5d4c);
+            
+        
+
+        circle_marker_eb2fa0133c66e2ac3c1ab5f933d390df.bindPopup(popup_fc4608650cdf6725ee598d7b8e8053a2)
+        ;
+
+        
+    
+    
+            var circle_marker_f1ef435bbe12916739765561b9f03146 = L.circleMarker(
+                [12.981233, 76.111657],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_9981106762e958acc4dd4d7b6321204a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6e0c9c57ee155fdf0323535c4ef881e = $(`<div id="html_e6e0c9c57ee155fdf0323535c4ef881e" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.981233&lon=76.111657" target="_blank">Click for analysis</a></div>`)[0];
+                popup_9981106762e958acc4dd4d7b6321204a.setContent(html_e6e0c9c57ee155fdf0323535c4ef881e);
+            
+        
+
+        circle_marker_f1ef435bbe12916739765561b9f03146.bindPopup(popup_9981106762e958acc4dd4d7b6321204a)
+        ;
+
+        
+    
+    
+            var circle_marker_fba0816c54efb390317f331e3429cbcf = L.circleMarker(
+                [12.982558, 76.230367],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_a409b90a1736b51f849de8de8645a2d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eaa7091206619dd5801f3433f97d5d3a = $(`<div id="html_eaa7091206619dd5801f3433f97d5d3a" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.982558&lon=76.230367" target="_blank">Click for analysis</a></div>`)[0];
+                popup_a409b90a1736b51f849de8de8645a2d1.setContent(html_eaa7091206619dd5801f3433f97d5d3a);
+            
+        
+
+        circle_marker_fba0816c54efb390317f331e3429cbcf.bindPopup(popup_a409b90a1736b51f849de8de8645a2d1)
+        ;
+
+        
+    
+    
+            var circle_marker_3053e3b3a429e02468e8e26a5591a6c0 = L.circleMarker(
+                [12.983985, 76.213937],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_30cf10f6bbf7116dbd5611da2e5e047b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6ba14a3667d56978892513fafc01ed0 = $(`<div id="html_f6ba14a3667d56978892513fafc01ed0" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.983985&lon=76.213937" target="_blank">Click for analysis</a></div>`)[0];
+                popup_30cf10f6bbf7116dbd5611da2e5e047b.setContent(html_f6ba14a3667d56978892513fafc01ed0);
+            
+        
+
+        circle_marker_3053e3b3a429e02468e8e26a5591a6c0.bindPopup(popup_30cf10f6bbf7116dbd5611da2e5e047b)
+        ;
+
+        
+    
+    
+            var circle_marker_f5ae4335d82f6a7dfcd5cdc4a685d4ff = L.circleMarker(
+                [12.985336, 76.092824],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_9874b5b61d95261495313b497a882618 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9881fbd8995885759f6be25258be4ec4 = $(`<div id="html_9881fbd8995885759f6be25258be4ec4" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.985336&lon=76.092824" target="_blank">Click for analysis</a></div>`)[0];
+                popup_9874b5b61d95261495313b497a882618.setContent(html_9881fbd8995885759f6be25258be4ec4);
+            
+        
+
+        circle_marker_f5ae4335d82f6a7dfcd5cdc4a685d4ff.bindPopup(popup_9874b5b61d95261495313b497a882618)
+        ;
+
+        
+    
+    
+            var circle_marker_6bf826095121263eb884a4ac6950af8c = L.circleMarker(
+                [12.985666, 76.108835],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_41453e325f1338910e7b3c3acabc7b7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce75f852b061db562e8f79aa89a93516 = $(`<div id="html_ce75f852b061db562e8f79aa89a93516" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.985666&lon=76.108835" target="_blank">Click for analysis</a></div>`)[0];
+                popup_41453e325f1338910e7b3c3acabc7b7b.setContent(html_ce75f852b061db562e8f79aa89a93516);
+            
+        
+
+        circle_marker_6bf826095121263eb884a4ac6950af8c.bindPopup(popup_41453e325f1338910e7b3c3acabc7b7b)
+        ;
+
+        
+    
+    
+            var circle_marker_dba55593139ee07bc4065abc0cd46171 = L.circleMarker(
+                [12.987084, 76.215156],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_810a8efbdce62ac7658d7d13b8ff1a32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07c17f59ffd8e7fd0c10cc944062101e = $(`<div id="html_07c17f59ffd8e7fd0c10cc944062101e" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.987084&lon=76.215156" target="_blank">Click for analysis</a></div>`)[0];
+                popup_810a8efbdce62ac7658d7d13b8ff1a32.setContent(html_07c17f59ffd8e7fd0c10cc944062101e);
+            
+        
+
+        circle_marker_dba55593139ee07bc4065abc0cd46171.bindPopup(popup_810a8efbdce62ac7658d7d13b8ff1a32)
+        ;
+
+        
+    
+    
+            var circle_marker_29ef8fdfa914ad7b5ea777a86bcc6fac = L.circleMarker(
+                [12.988427, 76.106928],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_fef8431c09935fae6398363447a8740d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71c096863d34130f9efeb28c41f8f393 = $(`<div id="html_71c096863d34130f9efeb28c41f8f393" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.988427&lon=76.106928" target="_blank">Click for analysis</a></div>`)[0];
+                popup_fef8431c09935fae6398363447a8740d.setContent(html_71c096863d34130f9efeb28c41f8f393);
+            
+        
+
+        circle_marker_29ef8fdfa914ad7b5ea777a86bcc6fac.bindPopup(popup_fef8431c09935fae6398363447a8740d)
+        ;
+
+        
+    
+    
+            var circle_marker_8878ae522d9a4ad198555fe6215bcc6f = L.circleMarker(
+                [12.989699, 76.111786],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_32d9d8aa8c3ae94747234ca3447983cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c86222f604accc712a5371a7bc4f269 = $(`<div id="html_1c86222f604accc712a5371a7bc4f269" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.989699&lon=76.111786" target="_blank">Click for analysis</a></div>`)[0];
+                popup_32d9d8aa8c3ae94747234ca3447983cd.setContent(html_1c86222f604accc712a5371a7bc4f269);
+            
+        
+
+        circle_marker_8878ae522d9a4ad198555fe6215bcc6f.bindPopup(popup_32d9d8aa8c3ae94747234ca3447983cd)
+        ;
+
+        
+    
+    
+            var circle_marker_9e49c269262226f893e738c5cf291e92 = L.circleMarker(
+                [12.990577, 76.191281],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_c470f694e4d35971b78c7ddc56154c08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f9a09c7c01d0694d3a153f98b65d962 = $(`<div id="html_4f9a09c7c01d0694d3a153f98b65d962" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.990577&lon=76.191281" target="_blank">Click for analysis</a></div>`)[0];
+                popup_c470f694e4d35971b78c7ddc56154c08.setContent(html_4f9a09c7c01d0694d3a153f98b65d962);
+            
+        
+
+        circle_marker_9e49c269262226f893e738c5cf291e92.bindPopup(popup_c470f694e4d35971b78c7ddc56154c08)
+        ;
+
+        
+    
+    
+            var circle_marker_329a270c97173a79a040ba7e87d898e2 = L.circleMarker(
+                [12.990677, 76.184664],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_371ffa98af0facfa43c1c23f3a3cc042 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8561868bf4e060ca6736ec1d6d8bcad6 = $(`<div id="html_8561868bf4e060ca6736ec1d6d8bcad6" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.990677&lon=76.184664" target="_blank">Click for analysis</a></div>`)[0];
+                popup_371ffa98af0facfa43c1c23f3a3cc042.setContent(html_8561868bf4e060ca6736ec1d6d8bcad6);
+            
+        
+
+        circle_marker_329a270c97173a79a040ba7e87d898e2.bindPopup(popup_371ffa98af0facfa43c1c23f3a3cc042)
+        ;
+
+        
+    
+    
+            var circle_marker_8689ddfd75d1e726a3e2bcd4a3eebe43 = L.circleMarker(
+                [12.990695, 76.08058],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_d7df3ca4335256744f3a92032a1f610c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3f6cda95c16fa4c984587eaa6f57698 = $(`<div id="html_c3f6cda95c16fa4c984587eaa6f57698" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.990695&lon=76.08058" target="_blank">Click for analysis</a></div>`)[0];
+                popup_d7df3ca4335256744f3a92032a1f610c.setContent(html_c3f6cda95c16fa4c984587eaa6f57698);
+            
+        
+
+        circle_marker_8689ddfd75d1e726a3e2bcd4a3eebe43.bindPopup(popup_d7df3ca4335256744f3a92032a1f610c)
+        ;
+
+        
+    
+    
+            var circle_marker_b9b3c6439bc0e2b308d596d63d0fbb20 = L.circleMarker(
+                [12.992996, 76.104654],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_cf4f55e43846bb1ed0b263bce4627f9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d3bde584cff64bc037d8582f516a4c0 = $(`<div id="html_3d3bde584cff64bc037d8582f516a4c0" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.992996&lon=76.104654" target="_blank">Click for analysis</a></div>`)[0];
+                popup_cf4f55e43846bb1ed0b263bce4627f9a.setContent(html_3d3bde584cff64bc037d8582f516a4c0);
+            
+        
+
+        circle_marker_b9b3c6439bc0e2b308d596d63d0fbb20.bindPopup(popup_cf4f55e43846bb1ed0b263bce4627f9a)
+        ;
+
+        
+    
+    
+            var circle_marker_143d9cd1010d858fde7f4de94c8a3445 = L.circleMarker(
+                [12.993672, 76.117668],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_557ad0a0f31f40c4df1a6db6235afad6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_919b99b47fbf95899180e997a4d1faf6 = $(`<div id="html_919b99b47fbf95899180e997a4d1faf6" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.993672&lon=76.117668" target="_blank">Click for analysis</a></div>`)[0];
+                popup_557ad0a0f31f40c4df1a6db6235afad6.setContent(html_919b99b47fbf95899180e997a4d1faf6);
+            
+        
+
+        circle_marker_143d9cd1010d858fde7f4de94c8a3445.bindPopup(popup_557ad0a0f31f40c4df1a6db6235afad6)
+        ;
+
+        
+    
+    
+            var circle_marker_97b60bb82828871c5e699478c832a0eb = L.circleMarker(
+                [12.993915, 76.165088],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_112c97c825a440bc9892a32936e79052 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b29d9787e4320e1d5476b5ba5e3f00b6 = $(`<div id="html_b29d9787e4320e1d5476b5ba5e3f00b6" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.993915&lon=76.165088" target="_blank">Click for analysis</a></div>`)[0];
+                popup_112c97c825a440bc9892a32936e79052.setContent(html_b29d9787e4320e1d5476b5ba5e3f00b6);
+            
+        
+
+        circle_marker_97b60bb82828871c5e699478c832a0eb.bindPopup(popup_112c97c825a440bc9892a32936e79052)
+        ;
+
+        
+    
+    
+            var circle_marker_d8dcc89d893f52e95373da2e0850d2fc = L.circleMarker(
+                [12.995216, 76.159108],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_0cbd58427d862264da4a02d4fb923182 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79ef2eb7fc077950aa5d18e04f9c4af9 = $(`<div id="html_79ef2eb7fc077950aa5d18e04f9c4af9" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.995216&lon=76.159108" target="_blank">Click for analysis</a></div>`)[0];
+                popup_0cbd58427d862264da4a02d4fb923182.setContent(html_79ef2eb7fc077950aa5d18e04f9c4af9);
+            
+        
+
+        circle_marker_d8dcc89d893f52e95373da2e0850d2fc.bindPopup(popup_0cbd58427d862264da4a02d4fb923182)
+        ;
+
+        
+    
+    
+            var circle_marker_c6d83b64bafbf2a65aba05419ec8424d = L.circleMarker(
+                [12.995555, 76.155639],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_d8d46308d6b19aa2b00f9090c5039c6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3efab32662ded30be987d06583dd826f = $(`<div id="html_3efab32662ded30be987d06583dd826f" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.995555&lon=76.155639" target="_blank">Click for analysis</a></div>`)[0];
+                popup_d8d46308d6b19aa2b00f9090c5039c6e.setContent(html_3efab32662ded30be987d06583dd826f);
+            
+        
+
+        circle_marker_c6d83b64bafbf2a65aba05419ec8424d.bindPopup(popup_d8d46308d6b19aa2b00f9090c5039c6e)
+        ;
+
+        
+    
+    
+            var circle_marker_e2c9ba112865228429c35135dca10650 = L.circleMarker(
+                [12.997572, 76.103844],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_f2f3ade2b8494949d4d64656a42f7188 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a62232c0bd0f36dc943d743eb9e35ecf = $(`<div id="html_a62232c0bd0f36dc943d743eb9e35ecf" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.997572&lon=76.103844" target="_blank">Click for analysis</a></div>`)[0];
+                popup_f2f3ade2b8494949d4d64656a42f7188.setContent(html_a62232c0bd0f36dc943d743eb9e35ecf);
+            
+        
+
+        circle_marker_e2c9ba112865228429c35135dca10650.bindPopup(popup_f2f3ade2b8494949d4d64656a42f7188)
+        ;
+
+        
+    
+    
+            var circle_marker_8a4c957a78b355173ad0a31fd183b0d3 = L.circleMarker(
+                [12.998422, 76.125074],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_b0055c7ab1adc10fa60ec98fc2d1f6ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae8ac3ed2c0b22bdb3c6c743ea28997b = $(`<div id="html_ae8ac3ed2c0b22bdb3c6c743ea28997b" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.998422&lon=76.125074" target="_blank">Click for analysis</a></div>`)[0];
+                popup_b0055c7ab1adc10fa60ec98fc2d1f6ea.setContent(html_ae8ac3ed2c0b22bdb3c6c743ea28997b);
+            
+        
+
+        circle_marker_8a4c957a78b355173ad0a31fd183b0d3.bindPopup(popup_b0055c7ab1adc10fa60ec98fc2d1f6ea)
+        ;
+
+        
+    
+    
+            var circle_marker_f9b405775f83454d75c8c3e619ce1bff = L.circleMarker(
+                [12.999522, 76.145814],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_f54ed6cc528fd963e349747df5681c4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06410636aa558807e73c176eb22147c9 = $(`<div id="html_06410636aa558807e73c176eb22147c9" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=12.999522&lon=76.145814" target="_blank">Click for analysis</a></div>`)[0];
+                popup_f54ed6cc528fd963e349747df5681c4e.setContent(html_06410636aa558807e73c176eb22147c9);
+            
+        
+
+        circle_marker_f9b405775f83454d75c8c3e619ce1bff.bindPopup(popup_f54ed6cc528fd963e349747df5681c4e)
+        ;
+
+        
+    
+    
+            var circle_marker_4f08dd9d3c106b2f1559bc951ccba94b = L.circleMarker(
+                [13.000265, 76.09429],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_5d690161e80ee5b8968862d13a1950ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4afb97c34273e6fdd57193854ae50523 = $(`<div id="html_4afb97c34273e6fdd57193854ae50523" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.000265&lon=76.09429" target="_blank">Click for analysis</a></div>`)[0];
+                popup_5d690161e80ee5b8968862d13a1950ad.setContent(html_4afb97c34273e6fdd57193854ae50523);
+            
+        
+
+        circle_marker_4f08dd9d3c106b2f1559bc951ccba94b.bindPopup(popup_5d690161e80ee5b8968862d13a1950ad)
+        ;
+
+        
+    
+    
+            var circle_marker_6f871654060c92d06f9d77a30f47e6f1 = L.circleMarker(
+                [13.000473, 76.132149],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_dde4f07250f877a9719ca7de0a412dcc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_561b93582f558dd041c3499f137704ca = $(`<div id="html_561b93582f558dd041c3499f137704ca" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.000473&lon=76.132149" target="_blank">Click for analysis</a></div>`)[0];
+                popup_dde4f07250f877a9719ca7de0a412dcc.setContent(html_561b93582f558dd041c3499f137704ca);
+            
+        
+
+        circle_marker_6f871654060c92d06f9d77a30f47e6f1.bindPopup(popup_dde4f07250f877a9719ca7de0a412dcc)
+        ;
+
+        
+    
+    
+            var circle_marker_a50732a317a4a2a4b44600b8313ba325 = L.circleMarker(
+                [13.002147, 76.138688],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_baac6eee9b4e4ee943c898d195b9e18f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_318b5cd5f404461e999f466287297413 = $(`<div id="html_318b5cd5f404461e999f466287297413" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.002147&lon=76.138688" target="_blank">Click for analysis</a></div>`)[0];
+                popup_baac6eee9b4e4ee943c898d195b9e18f.setContent(html_318b5cd5f404461e999f466287297413);
+            
+        
+
+        circle_marker_a50732a317a4a2a4b44600b8313ba325.bindPopup(popup_baac6eee9b4e4ee943c898d195b9e18f)
+        ;
+
+        
+    
+    
+            var circle_marker_320dcacbe5a3d228beacd796cbcf502f = L.circleMarker(
+                [13.002465, 76.107085],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_8c94d28fd81f416d8f13f5dcf9cb8322 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9eee5e1936d4a14007a94a0dc8290baf = $(`<div id="html_9eee5e1936d4a14007a94a0dc8290baf" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.002465&lon=76.107085" target="_blank">Click for analysis</a></div>`)[0];
+                popup_8c94d28fd81f416d8f13f5dcf9cb8322.setContent(html_9eee5e1936d4a14007a94a0dc8290baf);
+            
+        
+
+        circle_marker_320dcacbe5a3d228beacd796cbcf502f.bindPopup(popup_8c94d28fd81f416d8f13f5dcf9cb8322)
+        ;
+
+        
+    
+    
+            var circle_marker_daf284f817c1ac51709315c846c8ba95 = L.circleMarker(
+                [13.002487, 76.10387],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_b5283ff2a268140e6310c4bb0d0ade4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddb97eb549d9613713402b7dfac63d2e = $(`<div id="html_ddb97eb549d9613713402b7dfac63d2e" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.002487&lon=76.10387" target="_blank">Click for analysis</a></div>`)[0];
+                popup_b5283ff2a268140e6310c4bb0d0ade4e.setContent(html_ddb97eb549d9613713402b7dfac63d2e);
+            
+        
+
+        circle_marker_daf284f817c1ac51709315c846c8ba95.bindPopup(popup_b5283ff2a268140e6310c4bb0d0ade4e)
+        ;
+
+        
+    
+    
+            var circle_marker_2d0572bae08c17f13f3423b20cb245f4 = L.circleMarker(
+                [13.003331, 76.115378],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_930e42f1feed9f9851d4df2439f6775e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ed8ec459fc7bf2237fcdf8f1cd7210c = $(`<div id="html_7ed8ec459fc7bf2237fcdf8f1cd7210c" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.003331&lon=76.115378" target="_blank">Click for analysis</a></div>`)[0];
+                popup_930e42f1feed9f9851d4df2439f6775e.setContent(html_7ed8ec459fc7bf2237fcdf8f1cd7210c);
+            
+        
+
+        circle_marker_2d0572bae08c17f13f3423b20cb245f4.bindPopup(popup_930e42f1feed9f9851d4df2439f6775e)
+        ;
+
+        
+    
+    
+            var circle_marker_a0a9008c9751cfb081db01eed118b5f6 = L.circleMarker(
+                [13.003405, 76.13357],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_ad77675c82fce5394e9864c7572fa934 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ea314e114c07daecd70b296acb87fb8 = $(`<div id="html_4ea314e114c07daecd70b296acb87fb8" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.003405&lon=76.13357" target="_blank">Click for analysis</a></div>`)[0];
+                popup_ad77675c82fce5394e9864c7572fa934.setContent(html_4ea314e114c07daecd70b296acb87fb8);
+            
+        
+
+        circle_marker_a0a9008c9751cfb081db01eed118b5f6.bindPopup(popup_ad77675c82fce5394e9864c7572fa934)
+        ;
+
+        
+    
+    
+            var circle_marker_ccbc246d0751df76220239c769f050ee = L.circleMarker(
+                [13.004173, 76.112725],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_3d34789a07a677bfbd70fa2804839498 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c137b8426387d22944880e51d59c153 = $(`<div id="html_9c137b8426387d22944880e51d59c153" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.004173&lon=76.112725" target="_blank">Click for analysis</a></div>`)[0];
+                popup_3d34789a07a677bfbd70fa2804839498.setContent(html_9c137b8426387d22944880e51d59c153);
+            
+        
+
+        circle_marker_ccbc246d0751df76220239c769f050ee.bindPopup(popup_3d34789a07a677bfbd70fa2804839498)
+        ;
+
+        
+    
+    
+            var circle_marker_b5c57f0f5c35c3cf9b94fb7f105c7e90 = L.circleMarker(
+                [13.00546, 76.102381],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_f312427bd74b0fe0ecc80c4f49df5d54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c42581d3f38fa6ce2cacb29a42e37d4a = $(`<div id="html_c42581d3f38fa6ce2cacb29a42e37d4a" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.00546&lon=76.102381" target="_blank">Click for analysis</a></div>`)[0];
+                popup_f312427bd74b0fe0ecc80c4f49df5d54.setContent(html_c42581d3f38fa6ce2cacb29a42e37d4a);
+            
+        
+
+        circle_marker_b5c57f0f5c35c3cf9b94fb7f105c7e90.bindPopup(popup_f312427bd74b0fe0ecc80c4f49df5d54)
+        ;
+
+        
+    
+    
+            var circle_marker_6984c6754f640df32d23306f7fdd0d8e = L.circleMarker(
+                [13.006152, 76.127471],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_6a1b4e7461009cbd486e38ce87933ed7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aeb80b5dbc1b8cd8bf956aa5835192ab = $(`<div id="html_aeb80b5dbc1b8cd8bf956aa5835192ab" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.006152&lon=76.127471" target="_blank">Click for analysis</a></div>`)[0];
+                popup_6a1b4e7461009cbd486e38ce87933ed7.setContent(html_aeb80b5dbc1b8cd8bf956aa5835192ab);
+            
+        
+
+        circle_marker_6984c6754f640df32d23306f7fdd0d8e.bindPopup(popup_6a1b4e7461009cbd486e38ce87933ed7)
+        ;
+
+        
+    
+    
+            var circle_marker_288a8e6e504700a09e98c6fc8533500e = L.circleMarker(
+                [13.006473, 76.109636],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_2291781732a1e48b807a334b2cab3bf7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b97c66d29b1333e4584f495a3c2c9148 = $(`<div id="html_b97c66d29b1333e4584f495a3c2c9148" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.006473&lon=76.109636" target="_blank">Click for analysis</a></div>`)[0];
+                popup_2291781732a1e48b807a334b2cab3bf7.setContent(html_b97c66d29b1333e4584f495a3c2c9148);
+            
+        
+
+        circle_marker_288a8e6e504700a09e98c6fc8533500e.bindPopup(popup_2291781732a1e48b807a334b2cab3bf7)
+        ;
+
+        
+    
+    
+            var circle_marker_8c285e0eebab640917cfad0d5d07f850 = L.circleMarker(
+                [13.009303, 76.124262],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_caae91e988c82b1f985a451dd73503e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_822ed02d4d6fd85f3d7400d7bfd63475 = $(`<div id="html_822ed02d4d6fd85f3d7400d7bfd63475" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.009303&lon=76.124262" target="_blank">Click for analysis</a></div>`)[0];
+                popup_caae91e988c82b1f985a451dd73503e3.setContent(html_822ed02d4d6fd85f3d7400d7bfd63475);
+            
+        
+
+        circle_marker_8c285e0eebab640917cfad0d5d07f850.bindPopup(popup_caae91e988c82b1f985a451dd73503e3)
+        ;
+
+        
+    
+    
+            var circle_marker_2abaddaf03aa41fd0aecadeee2346910 = L.circleMarker(
+                [13.010247, 76.107156],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_cf4c3ed7e31c3670fa14bdda89f5d7d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_700a8b0a2a51a7e3bb0b8fb6db57b1ef = $(`<div id="html_700a8b0a2a51a7e3bb0b8fb6db57b1ef" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.010247&lon=76.107156" target="_blank">Click for analysis</a></div>`)[0];
+                popup_cf4c3ed7e31c3670fa14bdda89f5d7d4.setContent(html_700a8b0a2a51a7e3bb0b8fb6db57b1ef);
+            
+        
+
+        circle_marker_2abaddaf03aa41fd0aecadeee2346910.bindPopup(popup_cf4c3ed7e31c3670fa14bdda89f5d7d4)
+        ;
+
+        
+    
+    
+            var circle_marker_3eed3c0c6bbb22c6fe3344db9350bbbf = L.circleMarker(
+                [13.011823, 76.125508],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_50121ed57d5af746718c86f676eb300b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2462639d8de15848b97bdccb449257c = $(`<div id="html_d2462639d8de15848b97bdccb449257c" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.011823&lon=76.125508" target="_blank">Click for analysis</a></div>`)[0];
+                popup_50121ed57d5af746718c86f676eb300b.setContent(html_d2462639d8de15848b97bdccb449257c);
+            
+        
+
+        circle_marker_3eed3c0c6bbb22c6fe3344db9350bbbf.bindPopup(popup_50121ed57d5af746718c86f676eb300b)
+        ;
+
+        
+    
+    
+            var circle_marker_6dd7edfe5c969e01617efc764832d3a2 = L.circleMarker(
+                [13.012971, 76.114332],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_0a6eeaaeda2da4a1f7b8b96a0cabaf4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3846c223fa894b990c5429789c4f1f3 = $(`<div id="html_b3846c223fa894b990c5429789c4f1f3" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.012971&lon=76.114332" target="_blank">Click for analysis</a></div>`)[0];
+                popup_0a6eeaaeda2da4a1f7b8b96a0cabaf4f.setContent(html_b3846c223fa894b990c5429789c4f1f3);
+            
+        
+
+        circle_marker_6dd7edfe5c969e01617efc764832d3a2.bindPopup(popup_0a6eeaaeda2da4a1f7b8b96a0cabaf4f)
+        ;
+
+        
+    
+    
+            var circle_marker_e8f32d1c8c352fec8d152fe718af337f = L.circleMarker(
+                [13.01302, 76.106439],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_78f1e2b5c42eb75e67dbca261b3b476e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27bccc43a835ee48b0deb62c63be15e4 = $(`<div id="html_27bccc43a835ee48b0deb62c63be15e4" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.01302&lon=76.106439" target="_blank">Click for analysis</a></div>`)[0];
+                popup_78f1e2b5c42eb75e67dbca261b3b476e.setContent(html_27bccc43a835ee48b0deb62c63be15e4);
+            
+        
+
+        circle_marker_e8f32d1c8c352fec8d152fe718af337f.bindPopup(popup_78f1e2b5c42eb75e67dbca261b3b476e)
+        ;
+
+        
+    
+    
+            var circle_marker_95e50bf6d2a1cd04dbcb403ea91bd271 = L.circleMarker(
+                [13.014887, 76.116296],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_e16ab9915f058e2dd7b82021bcac716e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc9d3aaa8e0b689c50f41f4223ec0219 = $(`<div id="html_cc9d3aaa8e0b689c50f41f4223ec0219" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.014887&lon=76.116296" target="_blank">Click for analysis</a></div>`)[0];
+                popup_e16ab9915f058e2dd7b82021bcac716e.setContent(html_cc9d3aaa8e0b689c50f41f4223ec0219);
+            
+        
+
+        circle_marker_95e50bf6d2a1cd04dbcb403ea91bd271.bindPopup(popup_e16ab9915f058e2dd7b82021bcac716e)
+        ;
+
+        
+    
+    
+            var circle_marker_58a5d54713a2cd6116edff5f9ffd0049 = L.circleMarker(
+                [13.016279, 76.104683],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_b26943cee972a6fdeb0d573b21ab4574 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85519c6e071f46bcc069bae2cae49599 = $(`<div id="html_85519c6e071f46bcc069bae2cae49599" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.016279&lon=76.104683" target="_blank">Click for analysis</a></div>`)[0];
+                popup_b26943cee972a6fdeb0d573b21ab4574.setContent(html_85519c6e071f46bcc069bae2cae49599);
+            
+        
+
+        circle_marker_58a5d54713a2cd6116edff5f9ffd0049.bindPopup(popup_b26943cee972a6fdeb0d573b21ab4574)
+        ;
+
+        
+    
+    
+            var circle_marker_d18046fa2af3b4fdab2faff2d7f466d1 = L.circleMarker(
+                [13.017794, 76.132559],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_3c8712498c9276a4d06ddc730202d697 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4186209c30c8832ce435c812dd476672 = $(`<div id="html_4186209c30c8832ce435c812dd476672" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.017794&lon=76.132559" target="_blank">Click for analysis</a></div>`)[0];
+                popup_3c8712498c9276a4d06ddc730202d697.setContent(html_4186209c30c8832ce435c812dd476672);
+            
+        
+
+        circle_marker_d18046fa2af3b4fdab2faff2d7f466d1.bindPopup(popup_3c8712498c9276a4d06ddc730202d697)
+        ;
+
+        
+    
+    
+            var circle_marker_1ec6d704ea67b7c0426cbc5b2f126525 = L.circleMarker(
+                [13.019517, 76.114794],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_a3b96934ad4e7aafee4a40565ec08ec5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48ba2cb9aa7da29ef5cf7e16be89f1d3 = $(`<div id="html_48ba2cb9aa7da29ef5cf7e16be89f1d3" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.019517&lon=76.114794" target="_blank">Click for analysis</a></div>`)[0];
+                popup_a3b96934ad4e7aafee4a40565ec08ec5.setContent(html_48ba2cb9aa7da29ef5cf7e16be89f1d3);
+            
+        
+
+        circle_marker_1ec6d704ea67b7c0426cbc5b2f126525.bindPopup(popup_a3b96934ad4e7aafee4a40565ec08ec5)
+        ;
+
+        
+    
+    
+            var circle_marker_ac01eee1ca361552a57afcdd397b5f76 = L.circleMarker(
+                [13.022164, 76.103374],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_b6f95491dbc603f59f31d722fa74d929 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb11ddd1597a7161dc47981b700ac338 = $(`<div id="html_fb11ddd1597a7161dc47981b700ac338" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.022164&lon=76.103374" target="_blank">Click for analysis</a></div>`)[0];
+                popup_b6f95491dbc603f59f31d722fa74d929.setContent(html_fb11ddd1597a7161dc47981b700ac338);
+            
+        
+
+        circle_marker_ac01eee1ca361552a57afcdd397b5f76.bindPopup(popup_b6f95491dbc603f59f31d722fa74d929)
+        ;
+
+        
+    
+    
+            var circle_marker_700e2d2fedc9dfbd301378c6fa7b553b = L.circleMarker(
+                [13.026437, 76.107068],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_ebbe1ab0c4644dbdf50ccea361d18935 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a655372a0cf0aa8f00aa57b6a7b61efe = $(`<div id="html_a655372a0cf0aa8f00aa57b6a7b61efe" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.026437&lon=76.107068" target="_blank">Click for analysis</a></div>`)[0];
+                popup_ebbe1ab0c4644dbdf50ccea361d18935.setContent(html_a655372a0cf0aa8f00aa57b6a7b61efe);
+            
+        
+
+        circle_marker_700e2d2fedc9dfbd301378c6fa7b553b.bindPopup(popup_ebbe1ab0c4644dbdf50ccea361d18935)
+        ;
+
+        
+    
+    
+            var circle_marker_423783f17c43c2f384a2a762dc4f755f = L.circleMarker(
+                [13.02695, 76.102047],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_87b89da095c823caebbb3db66d4ad2e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fd8714404a56ab3c1c2cd5d010ac4a1 = $(`<div id="html_0fd8714404a56ab3c1c2cd5d010ac4a1" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.02695&lon=76.102047" target="_blank">Click for analysis</a></div>`)[0];
+                popup_87b89da095c823caebbb3db66d4ad2e7.setContent(html_0fd8714404a56ab3c1c2cd5d010ac4a1);
+            
+        
+
+        circle_marker_423783f17c43c2f384a2a762dc4f755f.bindPopup(popup_87b89da095c823caebbb3db66d4ad2e7)
+        ;
+
+        
+    
+    
+            var circle_marker_b3e456df2c649acfb11a93b1b28b5a1d = L.circleMarker(
+                [13.037216, 76.152299],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_1609552aa9ec3a40389ccffa5187fbfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61d46f48cbc5e322d642871da961d4ca = $(`<div id="html_61d46f48cbc5e322d642871da961d4ca" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.037216&lon=76.152299" target="_blank">Click for analysis</a></div>`)[0];
+                popup_1609552aa9ec3a40389ccffa5187fbfb.setContent(html_61d46f48cbc5e322d642871da961d4ca);
+            
+        
+
+        circle_marker_b3e456df2c649acfb11a93b1b28b5a1d.bindPopup(popup_1609552aa9ec3a40389ccffa5187fbfb)
+        ;
+
+        
+    
+    
+            var circle_marker_9390cd4bc7fd1404aad018e98aa73eb2 = L.circleMarker(
+                [13.065557, 76.173093],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_e12382f16b458793b65741b306057733 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e49cb14084849156c36151fe33ba6853 = $(`<div id="html_e49cb14084849156c36151fe33ba6853" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.065557&lon=76.173093" target="_blank">Click for analysis</a></div>`)[0];
+                popup_e12382f16b458793b65741b306057733.setContent(html_e49cb14084849156c36151fe33ba6853);
+            
+        
+
+        circle_marker_9390cd4bc7fd1404aad018e98aa73eb2.bindPopup(popup_e12382f16b458793b65741b306057733)
+        ;
+
+        
+    
+    
+            var circle_marker_09f8a423aa406e207e1cf2ea94ae35d9 = L.circleMarker(
+                [13.068062, 76.049443],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_ddad118e1b9462a09f4151a5f190dd7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e76f787bc8d6af5554328dc92cd79945 = $(`<div id="html_e76f787bc8d6af5554328dc92cd79945" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.068062&lon=76.049443" target="_blank">Click for analysis</a></div>`)[0];
+                popup_ddad118e1b9462a09f4151a5f190dd7e.setContent(html_e76f787bc8d6af5554328dc92cd79945);
+            
+        
+
+        circle_marker_09f8a423aa406e207e1cf2ea94ae35d9.bindPopup(popup_ddad118e1b9462a09f4151a5f190dd7e)
+        ;
+
+        
+    
+    
+            var circle_marker_48a2589e547b4507a4877befad4351fe = L.circleMarker(
+                [13.086131, 76.206932],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_625d74b5040bffb52fff223b4b8d836b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48cd00a804dbb3703b8a023f1d3a6752 = $(`<div id="html_48cd00a804dbb3703b8a023f1d3a6752" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.086131&lon=76.206932" target="_blank">Click for analysis</a></div>`)[0];
+                popup_625d74b5040bffb52fff223b4b8d836b.setContent(html_48cd00a804dbb3703b8a023f1d3a6752);
+            
+        
+
+        circle_marker_48a2589e547b4507a4877befad4351fe.bindPopup(popup_625d74b5040bffb52fff223b4b8d836b)
+        ;
+
+        
+    
+    
+            var circle_marker_4d60b286cfb39e16a7109b50a3464469 = L.circleMarker(
+                [13.149196, 76.304781],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_712afcf4c2038896a86fd1468cf85341 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5224c39236702852e94c77ee8e72a2de = $(`<div id="html_5224c39236702852e94c77ee8e72a2de" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.149196&lon=76.304781" target="_blank">Click for analysis</a></div>`)[0];
+                popup_712afcf4c2038896a86fd1468cf85341.setContent(html_5224c39236702852e94c77ee8e72a2de);
+            
+        
+
+        circle_marker_4d60b286cfb39e16a7109b50a3464469.bindPopup(popup_712afcf4c2038896a86fd1468cf85341)
+        ;
+
+        
+    
+    
+            var circle_marker_9f13c0b42184b0b5026b8de433a02926 = L.circleMarker(
+                [13.155494, 76.30498],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_c117b8e2cfd981713890527984fe4efc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6b6f4ad50a1c985b0b049f41746a280 = $(`<div id="html_d6b6f4ad50a1c985b0b049f41746a280" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.155494&lon=76.30498" target="_blank">Click for analysis</a></div>`)[0];
+                popup_c117b8e2cfd981713890527984fe4efc.setContent(html_d6b6f4ad50a1c985b0b049f41746a280);
+            
+        
+
+        circle_marker_9f13c0b42184b0b5026b8de433a02926.bindPopup(popup_c117b8e2cfd981713890527984fe4efc)
+        ;
+
+        
+    
+    
+            var circle_marker_992dce9cf0d3320fae96241bf42b674f = L.circleMarker(
+                [13.312914, 76.256902],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_861578c7824d5d73e981398f8f2d5d5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35198b13cd4f42182f8ae1f33b400fb9 = $(`<div id="html_35198b13cd4f42182f8ae1f33b400fb9" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.312914&lon=76.256902" target="_blank">Click for analysis</a></div>`)[0];
+                popup_861578c7824d5d73e981398f8f2d5d5e.setContent(html_35198b13cd4f42182f8ae1f33b400fb9);
+            
+        
+
+        circle_marker_992dce9cf0d3320fae96241bf42b674f.bindPopup(popup_861578c7824d5d73e981398f8f2d5d5e)
+        ;
+
+        
+    
+    
+            var circle_marker_d26144fe15033f2124f4bd8ed2ee7fc7 = L.circleMarker(
+                [13.325896, 76.25963],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_965b4b040028bc68b28592e0ea807e59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_835cb09a686a873b8cd635065139dac0 = $(`<div id="html_835cb09a686a873b8cd635065139dac0" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.325896&lon=76.25963" target="_blank">Click for analysis</a></div>`)[0];
+                popup_965b4b040028bc68b28592e0ea807e59.setContent(html_835cb09a686a873b8cd635065139dac0);
+            
+        
+
+        circle_marker_d26144fe15033f2124f4bd8ed2ee7fc7.bindPopup(popup_965b4b040028bc68b28592e0ea807e59)
+        ;
+
+        
+    
+    
+            var circle_marker_60947bd9aa105dce95a695766dd3aa8e = L.circleMarker(
+                [13.362155, 76.213586],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_acf68999c54526b8e1ba3e5790b83a8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66fd2b11e64972cce227e91cae5dbd35 = $(`<div id="html_66fd2b11e64972cce227e91cae5dbd35" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.362155&lon=76.213586" target="_blank">Click for analysis</a></div>`)[0];
+                popup_acf68999c54526b8e1ba3e5790b83a8f.setContent(html_66fd2b11e64972cce227e91cae5dbd35);
+            
+        
+
+        circle_marker_60947bd9aa105dce95a695766dd3aa8e.bindPopup(popup_acf68999c54526b8e1ba3e5790b83a8f)
+        ;
+
+        
+    
+    
+            var circle_marker_dfe00475479b8f5c990241135c28cebe = L.circleMarker(
+                [13.379456, 76.195054],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_c6962544222e4ecabce73170dd866e22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0d0e8345acc931f92dc56b25f01fdb6 = $(`<div id="html_c0d0e8345acc931f92dc56b25f01fdb6" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.379456&lon=76.195054" target="_blank">Click for analysis</a></div>`)[0];
+                popup_c6962544222e4ecabce73170dd866e22.setContent(html_c0d0e8345acc931f92dc56b25f01fdb6);
+            
+        
+
+        circle_marker_dfe00475479b8f5c990241135c28cebe.bindPopup(popup_c6962544222e4ecabce73170dd866e22)
+        ;
+
+        
+    
+    
+            var circle_marker_14dd2d2e506e0322f79d7266079d84a5 = L.circleMarker(
+                [13.422558, 76.15575],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_19b01fdf20f3fc24b08d9baa5965a76c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50ffa02c40d441186b3a6de126f55e2e = $(`<div id="html_50ffa02c40d441186b3a6de126f55e2e" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=13.422558&lon=76.15575" target="_blank">Click for analysis</a></div>`)[0];
+                popup_19b01fdf20f3fc24b08d9baa5965a76c.setContent(html_50ffa02c40d441186b3a6de126f55e2e);
+            
+        
+
+        circle_marker_14dd2d2e506e0322f79d7266079d84a5.bindPopup(popup_19b01fdf20f3fc24b08d9baa5965a76c)
+        ;
+
+        
+    
+    
+            var circle_marker_054b5a104dee7c5ee15da26eb94dc4ce = L.circleMarker(
+                [37.000198, 68.175512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_77046443d1bfefeb08395ed2c1d30817);
+        
+    
+        var popup_18a8929c0f4b0160f121ca810a14942f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_edba601254a622ec4fa16f44f9e6120b = $(`<div id="html_edba601254a622ec4fa16f44f9e6120b" style="width: 100.0%; height: 100.0%;"><a href="/api/telegram/?lat=37.000198&lon=68.175512" target="_blank">Click for analysis</a></div>`)[0];
+                popup_18a8929c0f4b0160f121ca810a14942f.setContent(html_edba601254a622ec4fa16f44f9e6120b);
+            
+        
+
+        circle_marker_054b5a104dee7c5ee15da26eb94dc4ce.bindPopup(popup_18a8929c0f4b0160f121ca810a14942f)
+        ;
+
+        
+    
+</script>
+</html>
