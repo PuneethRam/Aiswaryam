@@ -404,8 +404,10 @@ def telegram(request):
         accident_analysis.append({'year': year, 'fatal': fatal_count, 'non_fatal': non_fatal_count})
     main_cause_counts = RegionData['Main_Cause'].value_counts().reset_index().rename(columns={'index': 'Main_Cause', 'Main_Cause': 'count'})
     junction_control_counts = RegionData['Junction_Control'].value_counts().reset_index().rename(columns={'index': 'Junction_Control', 'Junction_Control': 'count'})
+    print(main_cause_counts)
 #----------------------------------------------------------------------------------------------------
     #Road condition
+
     year_roadcondition_counts = RegionData.groupby(['Year', 'Road_Condition']).size().reset_index(name='count')
 
     data_by_year = {}
@@ -466,7 +468,8 @@ def telegram(request):
         series_data2.append({
             'name': collision_type,
             'data': data
-        })    
+        })   
+    
 
 #---------------------------------------------------------------------------------------------------------------------
     context = {
@@ -486,7 +489,32 @@ def telegram(request):
     return Response(context)
     
     
-   
+
+@api_view(['GET'])
+def insights(request):
+    lat = float(request.GET.get('lat'))
+    lon = float(request.GET.get('lon'))
+    df=pd.read_csv(r'home\datasets\updated_dataset.csv')
+    RegionData = df[(df['Region_Latitude'].astype(float) == lat) & (df['Region_Longitude'].astype(float) == lon)]  
+    columns_to_keep = ['Main_Cause', 'Severity', 'Collision_Type','Junction_Control','Surface_Condition','Weather']
+    new_df = RegionData[columns_to_keep]
+
+    # Convert the dataframe to a string format
+    df_string = new_df.to_string(index=False)
+
+    import google.generativeai as genai
+    genai.configure(api_key="AIzaSyD01Eqx2S8qwI0NrsFztOkHiDqpBMCUGvA")   
+    model = genai.GenerativeModel("gemini-1.5-flash")
+    response = model.generate_content(f"I am analyzing the accidents that happened over a particular region. I have attached the dataframe below which contains some parameters regarding the accidents that occurred in that area. Please analyze it and provide an analysis including insights, major contributing factors, and any other relevant information you can infer. Keep the response short. Dataframe:\n{df_string}")
+    insights=response.text
+
+
+#---------------------------------------------------------------------------------------------------------------------
+    context = {
+       'insights' : insights,
+    }
+
+    return Response(context)   
 
 @api_view(['POST'])
 def blackspots(request):

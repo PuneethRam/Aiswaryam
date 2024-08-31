@@ -14,6 +14,7 @@ urlpatterns = [
   path('blackspots/', views.blackspots, name='blackspots'),
   path('telegram/', views.telegram, name='telegram'), 
   path('api/telegram/', views.telegram, name='telegram'),
+  path('api/insights/', views.insights, name='insights'),
   path('api/blackspots/', views.blackspots, name='blackspots'), 
   path('overall/', views.overall, name='overall'),
   path('pedestrian/', views.pedestrian, name='pedestrian'),
