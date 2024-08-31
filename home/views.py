@@ -503,7 +503,7 @@ def insights(request):
     df_string = new_df.to_string(index=False)
 
     import google.generativeai as genai
-    genai.configure(api_key="AIzaSyD01Eqx2S8qwI0NrsFztOkHiDqpBMCUGvA")   
+    genai.configure(api_key="")   
     model = genai.GenerativeModel("gemini-1.5-flash")
     response = model.generate_content(f"I am analyzing the accidents that happened over a particular region. I have attached the dataframe below which contains some parameters regarding the accidents that occurred in that area. Please analyze it and provide an analysis including insights, major contributing factors, and any other relevant information you can infer. Keep the response short. Dataframe:\n{df_string}")
     insights=response.text
